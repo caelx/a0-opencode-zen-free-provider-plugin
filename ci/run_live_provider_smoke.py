@@ -5,6 +5,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from helpers.filter import filter_free_models
 ENV_VAR="OPENCODE_ZEN_FREE_API_KEY"
 CATALOG_URL="https://opencode.ai/zen/v1/models"
